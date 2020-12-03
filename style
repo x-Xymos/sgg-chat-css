@@ -25,8 +25,8 @@ a.user
 
 .chat-user{
     background-color: rgb(91, 91, 91);
-    border-radius: 5px;
-    font-size: 14px;
+    border-radius: 4px;
+    font-size: 15px;
     padding: 0px 3px 0px 3px;
 }
 
