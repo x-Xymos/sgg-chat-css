@@ -1,10 +1,9 @@
-@-moz-document url-prefix("https://chat.strims.gg") {
 a.user
 {    
     /*username border color*/
     --main-bg-color: #000;
     /*Username color and background*/
-    color: #ffde00;
+    color: hsl(52, 60%, 50%);
     background: linear-gradient(#480030, #000); 
     border-radius:55px;
     -moz-border-radius:55px;
@@ -16,10 +15,20 @@ a.user
     border-color: var(--main-bg-color) var(--main-bg-color) var(--main-bg-color) var(--main-bg-color);
 }
 
+
+.pref-taggedvisibility .msg-highlight
+{   
+    /*Tagged message color with the*/
+    /*Increased visibility of tagged users*/
+    /*option enabled*/
+     background: linear-gradient(hsl(0, 60%, 27%),hsl(0, 60%, 27%),hsl(0, 60%, 22%));
+}
+    
+
 .msg-own
 {
     /*Own message background color*/
-   background: linear-gradient(#800,#800,#710101);
+   background: linear-gradient(hsl(0, 60%, 27%),hsl(0, 60%, 27%),hsl(0, 60%, 22%));
   
 }
 
@@ -45,16 +54,15 @@ a.user
      
 }
 
-.msg-highlight 
+/* .msg-highlight 
 {
-    /*Tagged message color*/
-   background: linear-gradient(#800,#800,#710101);
+   background: linear-gradient(hsl(0, 75%, 27%),hsl(0, 75%, 27%),hsl(0, 75%, 22%));
     
-}
+} */
 
 #chat-input-frame {
     grid-row: input;
-    background: linear-gradient(#2b0019,#430028,#59001a,#370021);
+    background: linear-gradient(hsl(325, 75%, 8%),hsl(324, 75%, 13%),hsl(342, 75%, 17%),hsl(324, 75%, 11%));
     
     box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
     border-top: 2px solid #000;
@@ -125,14 +133,7 @@ textarea, input, button {
 }
 
 
-.pref-taggedvisibility .msg-highlight
-{   
-    /*Tagged message color with the*/
-    /*Increased visibility of tagged users*/
-    /*option enabled*/
-     background: linear-gradient(#800,#800,#710101);
-}
-    
+
 .msg-chat .greentext {
     
     color: rgb(132, 213, 35);
@@ -145,7 +146,7 @@ textarea, input, button {
 {
     /*Chat text color*/
     
-    color: rgb(191, 255, 201);
+    color: hsl(91, 70%, 87%);
     border: 1px solid rgb(0, 0, 0);
     padding: 2px;
    white-space: normal;
@@ -158,7 +159,7 @@ textarea, input, button {
 
 
 @keyframes type{ 
-  from {  color: rgb(208, 255, 215,0);} 
+  from {  color: rgb(208, 255, 215,0);}
 } 
 
 @keyframes type2{ 
@@ -175,7 +176,7 @@ body
     
 
     
-   background: linear-gradient(#2b0019,#430028,#59001a,#64001e,#370021);
+   background: linear-gradient(hsl(325, 50%, 8%),hsl(324, 50%, 13%),hsl(342, 50%, 17%),hsl(342, 50%, 20%),hsl(324, 50%, 11%));
   
    background-attachment: fixed;
 
@@ -185,7 +186,7 @@ body
 .msg-chat .externallink 
 {   
     
-    color: #feff00;
+    color: hsl(60, 75%, 50%);
 }
 
 /*Visited URL color in chat*/
@@ -199,105 +200,4 @@ body
 /* "/me" username color*/
 .msg-me a.user {
     color: #6e6e6e;
-}
-}
-
-@-moz-document url-prefix("https://strims.gg") {
-.navbar-brand {
-    display: inline-block;
-    
-    padding-top: 0.33575rem;
-    padding-bottom: 0.33575rem;
-    margin-right: 1rem;
-    
-    font-size: 24px;
-    
-    line-height: inherit;
-    white-space: nowrap;
-    
-    filter: drop-shadow(4px 4px 4px #1c0017) ;
-}
-
-.navbar-dark .navbar-brand {
-    
-    color: #fff;
-    	
-   
-    
-
-}
-
-
-
-.navbar {
-     background-color: #3a0024;
-    
-    border: 0;
-    margin-bottom: 0;
-    min-height: 50px;
-    padding: 0;
-    padding-right: 0px;
-    padding-left: 0px;
-    filter: drop-shadow(4px 4px 4px #1c0017) ;
-}
-
-
-.navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active {
-    color: #ffde00;
-    border: 2px solid #826d00;
-    background: #140b1a;
-    border-radius:12px;
-    -moz-border-radius:12px;
-    -webkit-border-radius:12px;
-    
-}
-
-.navbar-dark .navbar-nav .nav-link {
-    
-  color: #ffde00;
-    
-    
-}
-
-
-
-html, body, #main, .fill-percentage, .routes {
-    
-    margin: 0;
-    width: 100%;
-    height: 100%;
-    color: #fff;
-    font-family: Franklin Gothic Medium,Franklin Gothic,ITC Franklin Gothic,Arial,sans-serif;
-    text-shadow:2px 2px 2px #000;
-    font-size: 16px;
-    background: linear-gradient(#2b0019,#430028,#59001a,#470015,#370021);
-    
-    
-}
-
-.streams-heading {
-    font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif; font-size: 45px; font-style: normal; font-variant: small-caps; font-weight: 700; line-height: 45px; } h3 { font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 23px; } p { font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; } blockquote { font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif; font-size: 17px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; } pre { font-family: Avant Garde, Avantgarde, Century Gothic, CenturyGothic, AppleGothic, sans-serif; font-size: 11px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 23px; 
-        
-        
-    text-align: center;
-    
-}
-
-.stream-thumbnail {
-    border: 2px solid #000;
-    background-color: #222;
-    filter: drop-shadow(2px 2px 2px #1c0017) ;
-    margin-top: 1em;
-    overflow: hidden;
-    position: relative;
-}
-.form-control, .form-control, .btn-group > .navbar-btn, .input-group-btn > .btn {
-    background-color: #140b1a;
-    color: #fff;
-    border-color: #000;
-    border-radius:5px;
-    -moz-border-radius:5px;
-    -webkit-border-radius:5px;
-    
-}
 }
